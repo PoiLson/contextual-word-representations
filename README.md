@@ -13,22 +13,24 @@ for the lesson of Deep Neural Networks in DSIT.
 
 **Can AI understand how the meaning of a word changes depending on its context?**
 
-This project's idea was inspired by this [post](https://blog.dailydoseofds.com/p/the-limitation-of-static-embeddings).
+The idea for this project was inspired by [post](https://blog.dailydoseofds.com/p/the-limitation-of-static-embeddings).
 
 As the post explains, the same English word can have several meanings depending on its surroundings.
-Our target is for the model to understand the surrounding sentence in order to identify the intended meaning.
+Our goal is to investigate whether models can distinguish the surrounding sentence in order to identify the intended meaning.
 
 For example:
 
 `Target word: bank`
 > "She went to the *bank* to withdraw money."
 > 
-> "They set on the *bank* of the river."
+> "They sat on the *bank* of the river."
 
 `Target word: bright`
 > "The room was *bright*".
 > 
 > "She is a *bright* student".
+
+```Note: The examples above are illustrative and are not taken directly from the WiC dataset```
 
 Traditional embeddings such as Word2Vec assign each word type a *single* vector representation, regardless of its context.
 On the contrary, contextual models such as BERT generate representations that depend on the surrounding tokens/words.
@@ -66,7 +68,9 @@ For example:
 
 **->Label: Different meaning**
 
-## First Approach on Methodology
+```Note: The examples above are illustrative and are not taken directly from the WiC dataset```
+
+## Proposed Methodology
 
 We plan to investigate several approaches, starting with simpler models and progressively introducing more advanced neural
 architectures.
@@ -97,10 +101,10 @@ architectures.
 
 We plan to evaluate the proposed approaches using the classification labels provided by the WiC dataset.
 
-And also for quantitative evaluation, we plan to use:
+For quantitative evaluation, we plan to use:
 - **Accuracy**: The proportion of correctly classified sentence pairs.
 - **Precision and Recall**: To investigate the performance of the models on each class.
 - **F1-score**: To summarize the balance between precision and recall.
 
-We also intent to investigate how different representation methods affect classification performance. Additionally, we may
+We also intend to investigate how different representation methods affect classification performance. Additionally, we may
 explore the learned embedding spaces through visualization techniques to better understand how context influences word representations.
