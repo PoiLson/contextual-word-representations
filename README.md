@@ -13,7 +13,7 @@ for the lesson of Deep Neural Networks in DSIT.
 
 **Can AI understand how the meaning of a word changes depending on its context?**
 
-The idea for this project was inspired by [post](https://blog.dailydoseofds.com/p/the-limitation-of-static-embeddings).
+The idea for this project was inspired by this [post](https://blog.dailydoseofds.com/p/the-limitation-of-static-embeddings).
 
 As the post explains, the same English word can have several meanings depending on its surroundings.
 Our goal is to investigate whether models can distinguish the surrounding sentence in order to identify the intended meaning.
